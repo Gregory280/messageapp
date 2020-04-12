@@ -12,3 +12,21 @@
 .w-color {
   color:rgb(55, 100, 151)!important;
 }
+
+::placeholder {
+  color:rgba(0, 0, 0, 0.466)!important;
+}
+
+#messages {
+  height:100px;
+  overflow: auto;
+}
+
+.coloring {
+  background: rgb(234, 236, 238)!important;
+}
+
+.spacing {
+  margin-left: 10px!important;
+
+}

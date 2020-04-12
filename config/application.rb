@@ -9,11 +9,7 @@ Bundler.require(*Rails.groups)
 module Messageapp
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-<<<<<<< HEAD
     config.load_defaults 5.2
-=======
-    config.load_defaults 6.0
->>>>>>> dc8077038e973d402628a4f9fe2989bbac6efe9c
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers

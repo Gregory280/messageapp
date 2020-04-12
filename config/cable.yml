@@ -2,13 +2,9 @@ development:
   adapter: async
 
 test:
-<<<<<<< HEAD
   adapter: async
-=======
-  adapter: test
->>>>>>> dc8077038e973d402628a4f9fe2989bbac6efe9c
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/1" } %>
+  url: redis://redistogo:f1d1cad7ca704b2ff02bfb63f32c3160@tetra.redistogo.com:9809/
   channel_prefix: messageapp_production
