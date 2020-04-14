@@ -1,7 +1,6 @@
 <h2 class="ui center aligned medium icon header w-color"><i class="circular comment outline icon inverted blue"></i>Chatting</h2>
-
 <div class="ui two column grid">
-  <div class="twelve wide column">
+  <div class="eleven wide column">
     <div class="ui fluid raised card chatbox">
       <div id='messages' class="content">
         <div id="message-container" class="ui medium feed">
@@ -13,27 +12,26 @@
           <div class="field">
             <div class="ui fluid icon input">
               <%= f.text_field :body %>
-              <div class="ui icon button blue spacing"><i class="white inverted paper plane icon"></i></div>
-              <!--<%= f.button '<i class="bordered orange edit icon"></i>'.html_safe %>-->
+                <%= f.button '<i class="white inverted paper plane icon"></i>'.html_safe, :class => 'ui icon button blue spacing' %>
+              <!--<div class="ui icon button blue spacing"></div>-->
             </div>
           </div>
         <% end %>
       </div>
     </div>
   </div>
-  
   <div class="four wide column">
     <div class="ui fluid raised card chatbox">
-      <div class='ui list'>
+    <div class='ui top attached button blue users-label item large'><i class='users icon'></i>Users</div>
+      <div class='ui list users-list'>
         <div class='item'>
           <div class='content'>
-            <div class='active-user'>
-              Online Users:
-              <%= @users.count %><br>
-              Currently Active:<br>
+            <div class='active-user user-label-content '>
               <% @users.each do |user| %>
-                <i class='users icon'></i>
-                <%= user.username %><br>
+                <div class='relaxed divided list'>
+                  <i class='user icon small'></i>
+                  <%= user.username %><br>
+                </div>
               <% end %>
             </div>
           </div>

@@ -1,7 +1,17 @@
 <div class='event'>
   <div class='content'>
     <div class='summary'>
-      <em><%= message.user.username %></em>: <%= message.body %>
+      <div class='separate-elements'>
+        <div class='username-col'>
+          <span class='user-name'><em><%= message.user.username %></em></span>
+        </div>
+        <div class='message-col'>
+          <span class='message'><%= message.body %></span>
+        </div>
+        <div class='date-col'>
+          <span class='message-time'><%= message.created_at.strftime('%m/%d %H:%M') %></span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

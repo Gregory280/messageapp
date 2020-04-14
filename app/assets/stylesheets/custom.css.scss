@@ -28,5 +28,57 @@
 
 .spacing {
   margin-left: 10px!important;
+}
+
+.user-name {
+  color: rgb(253, 253, 253);
+  background: linear-gradient(75deg, #00d2ff, #3a7bd5);
+  padding: 4px 15px 4px 15px;
+  border-radius: 15px;
+  margin-right:10px;
+}
+
+
+.message {
+  color: rgb(85, 79, 79);
+}
+
+.users-label {
+  &:hover {
+    background: #3993d8!important;
+  }
+}
+
+.user-label-content {
+  text-align: center;
+  font-size: 14px;
+}
+
+.users-list {
+  overflow:auto;
+}
+
+.user-content {
+  margin-top: -10px;
+}
+
+.message-time {
+  font-size:10px;
+  opacity: 0.4;
+}
+
+.separate-elements {
+
+  display: flex;
+}
+
+.username-col {
+  width:100px;
 
 }
+
+.message-col {
+  flex-grow: 1;
+
+}
+
