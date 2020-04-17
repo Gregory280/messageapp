@@ -22,7 +22,9 @@
       <% end %>
     </div>
     <div class="middle aligned column">
-      <div class="ui big button"><i class="signup icon"></i>Sign Up</div>
+      <div class='button-signup'>
+        <%= link_to 'Sign Up<i class="signup icon padding-signup"></i>'.html_safe ,  signup_path,  class: 'ui big button'%>
+      </div>
     </div>
   </div>
   <div class="ui vertical divider">Or</div>
